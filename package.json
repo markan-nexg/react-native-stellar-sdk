@@ -15,7 +15,7 @@
     "publish": "npm publish --access public"
   },
   "dependencies": {
-    "react-native-randombytes": "3.5.0"
+    "react-native-randombytes": "^3.5.0"
   },
   "devDependencies": {
     "babel-eslint": "9.0.0",

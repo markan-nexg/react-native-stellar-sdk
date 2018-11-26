@@ -1,6 +1,8 @@
 import createHash from 'create-hash';
-import {NativeModules} from 'react-native';
-const {RNRandomBytes} = NativeModules;
+// import {NativeModules} from 'react-native';
+// const {RNRandomBytes} = NativeModules;
+import { randomBytes } from 'react-native-randombytes';
+const RNRandomBytes = randomBytes;
 
 if (!RNRandomBytes) {
     throw new Error('react-native-randombytes not linked');
