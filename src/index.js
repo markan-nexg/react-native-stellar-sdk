@@ -6,8 +6,9 @@ Keypair.randomAsync = function randomAsync() {
         .then(secret => Keypair.fromRawEd25519Seed(secret));
 };
 
-Keypair.random = function random() {
-    throw new Error('Use Stellar.Keypair.randomAsync for React Native');
+Keypair.random = function random(secret) {
+    //throw new Error('Use Stellar.Keypair.randomAsync for React Native');
+    return Keypair.fromRawEd25519Seed(secret);
 };
 
 export * from 'stellar-sdk';
